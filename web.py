@@ -13,9 +13,13 @@ st.title("my :rainbow[Todos] items")
 
 if st.button("Send balloons!"):
     st.balloons()
- st.sidebar.header("Todos")
- x=st.slider("select a value")
- st.write(x, "squared is", x * x)
+
+
+
+
+st.sidebar.header("Todos")
+x=st.slider("select a value")
+st.write(x, "squared is", x * x)
 
 for index, todo in enumerate(todos):
     checkbox=st.checkbox(todo, key=todo)
